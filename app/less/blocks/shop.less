@@ -1,0 +1,138 @@
+.shop {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        top: -330px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 985px;
+        z-index: -1;
+        background-image: url('../img/bg/bg-lines.png'), url(../img/bg/bg-water.jpg);
+        background-position: center, center;
+        background-size: auto, cover;
+        background-repeat: repeat-y, no-repeat;
+    }
+}
+
+.shop-slider-wrapper {
+    position: relative;
+    height: 565px;
+}
+
+.shop-slider-holder {
+    position: absolute;
+    left: 0;
+    right: 0px;
+    
+    @media (min-width: 1394px) {
+        right: -85px;
+    }
+}
+
+#shopSlider .owl-item img {
+    width: auto;
+}
+
+.board {
+    position: relative;   
+    width: 250px;
+    height: 435px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 650px) {
+        padding-left: 185px;;
+        width: 435px + 185px;
+    }
+
+    @media (min-width: 1254px) {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+.board__img-holder {
+    width: 250px;
+    height: 320px;
+    background-color: #ececec;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (min-width: 650px) {
+        left: 185px;
+    }
+
+    @media (min-width: 1254px) {
+        left: 0;
+    }
+}
+
+.board__img {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shop__link {
+    text-align: center;
+}
+
+
+.board-desc {
+    text-align: right;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 210px;
+
+    @media (min-width: 650px) {
+        right: auto;
+        left: 210px + 185px;
+        text-align-last: left;
+    }
+
+    @media (min-width: 1254px) {
+        left: 210px;
+    }
+}
+.board__cat {
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+.board__title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.26px;
+    line-height: 1;
+}
+.board-buy {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+.board-buy__price {
+    color: #ce60a8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+}
+.board-buy__link {
+    color: #333333;
+    font-family: 'League-Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+}

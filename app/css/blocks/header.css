@@ -1,0 +1,46 @@
+header {
+  position: relative;
+}
+.site-desc {
+  position: absolute;
+  top: 60px;
+  right: -50px;
+}
+@media (max-width: 1400px) {
+  .site-desc {
+    right: 45px;
+    top: 170px;
+  }
+  .site-desc .site-desc__content {
+    z-index: 2;
+    color: #fff;
+    opacity: 1;
+  }
+}
+.site-desc__content {
+  position: absolute;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+      -ms-transform: rotate(-90deg) translateX(-100%);
+          transform: rotate(-90deg) translateX(-100%);
+  opacity: 0.2;
+  color: #0b0c11;
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+}
+.header-social-wrapper {
+  position: absolute;
+  right: -45px;
+  bottom: 0;
+}
+@media (max-width: 1400px) {
+  .header-social-wrapper {
+    right: 30px;
+    bottom: 30px;
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"name": "optimizedhtml",
+	"version": "5.0.0",
+	"description": "OptimizedHTML 5 - Start HTML Template",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "WebDesign Master",
+	"license": "ISC",
+	"devDependencies": {
+		"bootstrap": "^4.4.1",
+		"browser-sync": "^2.26.7",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-concat": "^2.6.1",
+		"gulp-less": "^4.0.1",
+		"gulp-uglify-es": "^2.0.0",
+		"gulp-file-include": "^2.1.1",
+		"less": "^3.11.1"
+	},
+	"dependencies": {
+	}
+}

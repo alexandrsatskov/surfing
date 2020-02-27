@@ -1,0 +1,102 @@
+.navigation-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1254px) {
+        flex-direction: row;
+        height: 130px;
+    }
+}
+.nav-logo-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 1254px) {
+        margin-right: 190px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: auto;
+    }
+}
+.navigation {
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+.navigation__item {
+    text-align: center;
+    margin-bottom: 10px; 
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 40px;
+        margin-bottom: 0;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.navigation__link {
+    color: rgba(11, 12, 17, 0.9);
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.58px;
+}
+
+
+.site-desc {
+    display: none;
+
+    @media (min-width: 1400px) {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: -50px;
+        z-index: 2;
+    }
+}
+
+.site-desc__content {
+    position: absolute;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+    opacity: 0.2;
+    color: #0b0c11;
+    font-family: 'League-Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+}
+
+.header-social-wrapper {
+    position: absolute;
+
+    @media (max-width: 1340px) {
+        display: none;
+    }
+
+    @media (min-width: 1254px) {
+        right: -45px;
+        bottom: 0;
+    }
+}

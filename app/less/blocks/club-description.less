@@ -1,0 +1,97 @@
+.club-description {
+    padding-top: 110px / 2;
+    padding-bottom: 200px / 2;
+
+    @media (min-width) {
+        padding-top: 110px;
+        padding-bottom: 200px;
+    }
+}
+
+.club-description-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.club-description__img {
+    width: 70%;
+    
+    @media (min-width) {
+        width: auto;
+    }
+}
+
+.club-description-video {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 60%;
+    
+    @media (min-width) {
+        width: auto;
+    }
+}
+
+.club-description-video__control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 68px / 2;
+    height: 68px / 2;
+    border-radius: 50%;
+    box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
+    background-color: #5da8ef;
+
+    @media (min-width: 1254px) {
+        width: 68px;
+        height: 68px;
+    }
+
+    img {     
+        width: 35%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (min-width: 1254px) {
+            width: auto;
+        }
+    }
+}
+
+.club-description__text {
+    margin-top: 90px;
+    max-width: 450px;
+    opacity: 0.65;
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;   
+    letter-spacing: 0.35px;
+
+    @media (min-width: 855px) and (max-width: 1254px) {
+        max-width: 300px;
+    }
+
+    @media (min-width: 1254px) {
+        width: 350px;
+        margin: 60px 0 50px 110px ;
+    }
+}
+
+.club-description__link {
+    text-align: center;
+
+    @media (min-width: 1064px) {
+        text-align: left;
+    }
+
+    @media (min-width: 1254px) {
+        margin-left: 110px;
+        text-align: left;
+    }
+}

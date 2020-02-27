@@ -1,0 +1,62 @@
+.quote {
+    margin-top: 90px / 2;
+    padding-bottom: 150px / 2;
+
+    @media (min-width: 992px) {
+        margin-top: 90px;
+        padding-bottom: 150px;
+    }
+}
+
+.quote-wrapper {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    @media (min-width: 992px) {
+        width: 610px;
+        padding: 0;
+    }
+    
+    &:after {
+        position: absolute;
+        left: 50%;
+        bottom: -60px / 2;
+        transform: translate(-30%, 100%);
+        content: '';
+        width: 2px;
+        height: 100px / 2;
+        background-color: #5da8ef;
+
+        @media (min-width: 992px) {
+            height: 100px;
+            bottom: -60px;
+        }
+    }
+}
+
+.quote__text {
+    opacity: 0.9;
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.26px;
+    margin-bottom: 25px;
+
+    @media (min-width: 992px) {
+        font-size: 26px;
+    }
+}
+
+.quote__author {
+    opacity: 0.9;
+    color: #333333;
+    font-family: 'League-Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+}
